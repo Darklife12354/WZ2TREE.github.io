@@ -1,9 +1,13 @@
 * {
     font-family: 'Courier New', Courier, monospace;
 }
+/*Normal Stuff*/
 body {
     background-color: #040829;
     color: white;
+}
+.welcome {
+    padding-top: 3%;
 }
 a:link {
     color: #3c7a99;
@@ -14,13 +18,48 @@ a:link {
   a:hover {
     color: #5e9dbd;
   }
+
+/*GunStuff*/
 .guns {
     padding-top: .5%;
+    text-align: center;
+}
+.gunHeader {
+    padding-top: 1%;
+}
+.gunBox {
+    border-style: solid;
+    border-color: white;
+    border-radius: 15px;
+}
+.AR, .BR, .SMG, .SHOTGUN, .LMG, .MR, .SR{
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+    grid-gap: 10px; 
+    margin-left: 2%;
+    margin-right: 2%;
+}
+/*OpticStuff*/
+.optiHeader {
+    padding-top: 3%;
+    text-align: center;
 }
 .opticDIV {
-    padding-top: .5%;
+    padding-top: 3%;
+    text-align: center;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+    grid-gap: 10px; 
 }
-/*Cata*/
+.optibox {
+    margin-left: 2%;
+    margin-right: 2%;
+    border-style: solid;
+    border-color: white;
+    border-radius: 15px;
+    padding: 5px;
+}
+/*Cata Stuff*/
 .cata {
     background-color: black;
     width: 100%;
