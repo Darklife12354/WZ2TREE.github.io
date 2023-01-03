@@ -10,10 +10,10 @@ body {
     padding-top: 3%;
 }
 a:link {
-    color: #3c7a99;
+    color: #02d9fa;
   }
   a:visited {
-    color: #155373;
+    color: #69ebff;
   }
   a:hover {
     color: #5e9dbd;
@@ -27,30 +27,31 @@ a:link {
 .AR, .BR, .SMG, .SHOTGUN, .LMG, .MR, .SR{
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
-    grid-gap: 10px; 
-    margin-left: 2%;
-    margin-right: 2%;
+    grid-gap: 5px; 
+    margin-left: 1%;
+    margin-right: 1%;
 }
 /*OpticStuff*/
-.gunHeader, .optiHeader, .barrelHeader {
+.gunHeader, .optiHeader, .barrelHeader, .gripHeader {
     padding-top: 2%;
     text-align: center;
 }
-.opticDIV, .barrelDIV {
+.opticDIV, .barrelDIV, .gripDIV {
     padding-top: 3%;
     text-align: center;
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
-    grid-gap: 10px; 
+    grid-gap: 5px; 
 }
 /*Box Shit*/
-.gunBox, .optibox, .barrelBox {
-    margin-left: 1%;
-    margin-right: 1%;
+.gunBox, .optibox, .barrelBox, .gripbox {
     border-style: solid;
     border-color: white;
     border-radius: 15px;
-    padding: 4px;
+    padding: 1px;
+}
+.gunBox:hover, .optibox:hover, .barrelBox:hover, .gripbox:hover {
+    border-color: #3275a8;
 }
 /*Cata Stuff*/
 .cata {
