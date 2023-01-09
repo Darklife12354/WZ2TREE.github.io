@@ -1,30 +1,594 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="description" content="Call Of Duty Modern Warfare 2 Weapon Attachnment Tree">
-        <meta name="keywords" content="MW2, WZ2, WZ, MW, Modern Warfare 2, Warzone 2, Wzrzone 2 Weapon Tree, Modern Warfare 2 Weapon Tree, Tree">
-        <meta name="author" content="Darklife12345">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MWII Weapon Attachment Tree</title>
-        <link rel="stylesheet" href="style.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    </head>
-    <body>
-        <script src="Script.js"></script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <script src="MenuFunctions.js"></script>
+    <div class="header">
         <div class="cata">
-            <a href="#"><button>Home</button></a>
-            <a href="Guns.html"><button>Guns</button></a>
-            <a href="Barrels.html"><button>Barrels</button></a>
-            <a href="Muzzles.html"><button>Muzzles</button></a>
-            <a href="Optics.html"><button>Optics</button></a>
-            <a href="Grips.html"><button>Grips</button></a>
+            <button id="guns">Guns</button>
+            <button id="barrels">Barrels</button>
+            <button id="muzzles">Muzzles</button>
+            <button id="optics">Optics</button>
+            <button id="grips">Grips</button>
         </div>
-        <div class="welcome">
-            <h2>Thank you for choosing my website!</h2>
-            <h3>Here you can find what you need to do to get the attachment you want</h3>
+        <!-- A Sub Menu -->
+        <div class="gunsSubMenu">
+            <button class="assaltRiflesButton">Assalt Rifles</button>
+            <div class="assaltRiflesMenu">
+                <a href="#M4"><button id="hoverButton">M4</button></a>
+                <a href="#TAQ56"><button id="hoverButton">TAQ-56</button></a>
+                <a href="#KASTOV762"><button id="hoverButton">KASTOV 762</button></a>
+                <a href=""><button id="hoverButton">LACHMANN-556</button></a>
+                <a href=""><button id="hoverButton">STB 556</button></a>
+                <a href=""><button id="hoverButton">M16</button></a>
+                <a href=""><button id="hoverButton">KASTOV-74U</button></a>
+                <a href=""><button id="hoverButton">KASTOV 545</button></a>
+                <a href=""><button id="hoverButton">CHIMERA</button></a>
+                <a href=""><button id="hoverButton">M13B</button></a>
+            </div>
+            <button class="battleRiflesButton">Battle Rifles</button>
+            <div class="battleRiflesMenu">
+                <a href=""><button></button></a>
+                <a href=""><button></button></a>
+                <a href=""><button></button></a>
+                <a href=""><button></button></a>
+            </div>
+            <button class="subMachineGunsButton">Sub Machine Guns</button>
+            <div class="subMachineGunsMenu">
+                <a href=""><button></button></a>
+                <a href=""><button></button></a>
+                <a href=""><button></button></a>
+                <a href=""><button></button></a>
+                <a href=""><button></button></a>
+                <a href=""><button></button></a>
+                <a href=""><button></button></a>
+                <a href=""><button></button></a>
+                <a href=""><button></button></a>
+            </div>
+            <button class="shotgunsButton">Shotguns</button>
+            <div class="shotgunsMenu">
+                <a href=""><button></button></a>
+                <a href=""><button></button></a>
+                <a href=""><button></button></a>
+                <a href=""><button></button></a>
+            </div>
+            <button class="lightMachineGunsButton">Light Machine Guns</button>
+            <div class="lightMachineGunsMenu">
+                <a href=""><button></button></a>
+                <a href=""><button></button></a>
+                <a href=""><button></button></a>
+                <a href=""><button></button></a>
+                <a href=""><button></button></a>
+                <a href=""><button></button></a>
+            </div>
+            <button class="marksmanRiflesButton">Marksman Rifles</button>
+            <div class="marksmanRiflesMenu">
+                <a href=""><button></button></a>
+                <a href=""><button></button></a>
+                <a href=""><button></button></a>
+                <a href=""><button></button></a>
+                <a href=""><button></button></a>
+                <a href=""><button></button></a>
+            </div>
+            <button class="sniperRiflesButton">Sniper Rifles</button>
+            <div class="sniperRiflesMenu">
+                <a href=""><button></button></a>
+                <a href=""><button></button></a>
+                <a href=""><button></button></a>
+                <a href=""><button></button></a>
+                <a href=""><button></button></a>
+            </div>
+            <button class="pistolsButton">Pistols</button>
+            <div class="pistolsMenu">
+                <a href=""><button></button></a>
+                <a href=""><button></button></a>
+                <a href=""><button></button></a>
+                <a href=""><button></button></a>
+                <a href=""><button></button></a>
+            </div>
+            <button class="launchersButton">Launchers</button>
+            <div class="launchersMenu">
+            
+            </div>
+        </div>
+        <!-- End Of Sub Menu -->
+    </div>
 
-            <h3>Working Parts : Guns, Optics, & Barrels</h3>
+    <div class="body">
+        <div class="guns">
+            <h1 class="typeHeader">Guns</h1>
+            <h2 class="typeHeader">Assalt Rifles</h2>
+            <div class="assaltRifles">
+                <div class="box" id="M4">
+                    <h2>M4</h2>
+                    <h3>Unlocks :</h3>
+                </div>
+                <div class="box" id="TAQ56">
+                    <h2>TAQ-56</h2>
+                    <h3>Unlocks :</h3>
+                </div>
+                <div class="box" id="KASTOV762">
+                    <h2>KASTOV 762</h2>
+                    <h3>Unlocks :</h3>
+                </div>
+                <div class="box" id="LACHMANN556">
+                    <h2>LACHMANN-556</h2>
+                    <h3>Unlocks :</h3>
+                </div>
+                <div class="box" id="STB556">
+                    <h2>STB 556</h2>
+                    <h3>Unlocks :</h3>
+                </div>
+                <div class="box" id="M16">
+                    <h2>M16</h2>
+                    <h3>Unlocks :</h3>
+                </div>
+                <div class="box" id="KASTOV74U">
+                    <h2>KASTOV-74U</h2>
+                    <h3>Unlocks :</h3>
+                </div>
+                <div class="box" id="KASTOV-545">
+                    <h2>KASTOV 545</h2>
+                    <h3>Unlocks :</h3>
+                </div>
+                <div class="box" id="CHIMERA">
+                    <h2>CHIMERA</h2>
+                    <h3>Unlocks :</h3>
+                </div>
+                <div class="box" id="M13B">
+                    <h2>M13B</h2>
+                    <h3>Unlocks :</h3>
+                </div>
+            </div>
+            <h2 class="typeHeader">Battle Rifles</h2>
+            <div class="battleRifles">
+                <div class="box" id="LACHMANN762">
+                    <h2>LACHMANN-762</h2>
+                    <h3>Unlocks :</h3>
+                </div>
+                <div class="box" id="S014">
+                    <h2>S0-14</h2>
+                    <h3>Unlocks :</h3>
+                </div>
+                <div class="box" id="TAQV">
+                    <h2>TAQ-V</h2>
+                    <h3>Unlocks :</h3>
+                </div>
+                <div class="box" id="FTACRECON">
+                    <h2>FTAC RECON</h2>
+                    <h3>Unlocks :</h3>
+                </div>
+            </div>
+            <h2 class="typeHeader">Submachine Guns</h2>
+            <div class="subMachineGuns">
+                <div class="box" id="VEL46">
+                    <h2>VEL 46</h2>
+                    <h3>Unlocks :</h3>
+                </div>
+                <div class="box" id="MX9">
+                    <h2>MX9</h2>
+                    <h3>Unlocks :</h3>
+                </div>
+                <div class="box" id="LACHMANNSUB">
+                    <h2>LACHMANN SUB</h2>
+                    <h3>Unlocks :</h3>
+                </div>
+                <div class="box" id="VAZNEZ9K">
+                    <h2>VAZNEV-9K</h2>
+                    <h3>Unlocks :</h3>
+                </div>
+                <div class="box" id="FSSHURRICANE">
+                    <h2>FSS HURRICANE</h2>
+                    <h3>Unlocks :</h3>
+                </div>
+                <div class="box" id="MINIBAK">
+                    <h2>MINIBAK</h2>
+                    <h3>Unlocks :</h3>
+                </div>
+                <div class="box" id="BASP">
+                    <h2>BAS-P</h2>
+                    <h3>Unlocks :</h3>
+                </div>
+                <div class="box" id="PDSW528">
+                    <h2>PDSW 528</h2>
+                    <h3>Unlocks :</h3>
+                </div>
+                <div class="box" id="FENNEC45">
+                    <h2>FENNEC 45</h2>
+                    <h3>Unlocks :</h3>
+                </div>
+            </div>
+            <h2 class="typeHeader">Shotguns</h2>
+            <div class="shotguns">
+                <div class="box" id="LOCKWOOD300">
+                    <h2>LOCKWOOD 300</h2>
+                    <h3>Unlocks :</h3>
+                </div>
+                <div class="box" id="EXPEDITE12">
+                    <h2>EXPEDITE 12</h2>
+                    <h3>Unlocks :</h3>
+                </div>
+                <div class="box" id="BRYSON800">
+                    <h2>BRYSON 800</h2>
+                    <h3>Unlocks :</h3>
+                </div>
+                <div class="box" id="BRYSON890">
+                    <h2>BRYSON 890</h2>
+                    <h3>Unlocks :</h3>
+                </div>
+            </div>
+            <h2 class="typeHeader">Light Machine Guns</h2>
+            <div class="lightMachineGuns">
+                <div class="box" id="">
+                    <h2></h2>
+                    <h3>Unlocks :</h3>
+                </div>
+                <div class="box" id="">
+                    <h2></h2>
+                    <h3>Unlocks :</h3>
+                </div>
+                <div class="box" id="">
+                    <h2></h2>
+                    <h3>Unlocks :</h3>
+                </div>
+                <div class="box" id="">
+                    <h2></h2>
+                    <h3>Unlocks :</h3>
+                </div>
+                <div class="box" id="">
+                    <h2></h2>
+                    <h3>Unlocks :</h3>
+                </div>
+                <div class="box" id="">
+                    <h2></h2>
+                    <h3>Unlocks :</h3>
+                </div>
+            </div>
+            <h2 class="typeHeader">Marksman Rifles</h2>
+            <div class="marksmanRifles">
+                <div class="box" id="">
+                    <h2></h2>
+                    <h3>Unlocks :</h3>
+                </div>
+                <div class="box" id="">
+                    <h2></h2>
+                    <h3>Unlocks :</h3>
+                </div>
+                <div class="box" id="">
+                    <h2></h2>
+                    <h3>Unlocks :</h3>
+                </div>
+                <div class="box" id="">
+                    <h2></h2>
+                    <h3>Unlocks :</h3>
+                </div>
+                <div class="box" id="">
+                    <h2></h2>
+                    <h3>Unlocks :</h3>
+                </div>
+                <div class="box" id="">
+                    <h2></h2>
+                    <h3>Unlocks :</h3>
+                </div>
+            </div>
+            <h2 class="typeHeader">Sniper Rifles</h2>
+            <div class="sniperRifles">
+                <div class="box" id="">
+                    <h2></h2>
+                    <h3>Unlocks :</h3>
+                </div>
+                <div class="box" id="">
+                    <h2></h2>
+                    <h3>Unlocks :</h3>
+                </div>
+                <div class="box" id="">
+                    <h2></h2>
+                    <h3>Unlocks :</h3>
+                </div>
+                <div class="box" id="">
+                    <h2></h2>
+                    <h3>Unlocks :</h3>
+                </div>
+                <div class="box" id="">
+                    <h2></h2>
+                    <h3>Unlocks :</h3>
+                </div>
+            </div>
+            <h2 class="typeHeader">Pistols</h2>
+            <div class="pistols">
+                <div class="box" id="">
+                    <h2></h2>
+                    <h3>Unlocks :</h3>
+                </div>
+                <div class="box" id="">
+                    <h2></h2>
+                    <h3>Unlocks :</h3>
+                </div>
+                <div class="box" id="">
+                    <h2></h2>
+                    <h3>Unlocks :</h3>
+                </div>
+                <div class="box" id="">
+                    <h2></h2>
+                    <h3>Unlocks :</h3>
+                </div>
+                <div class="box" id="">
+                    <h2></h2>
+                    <h3>Unlocks :</h3>
+                </div>
+            </div>
+            <h2 class="typeHeader">Launchers</h2>
+            <div class="launchers">
+                <div class="box" id="">
+                    <h2></h2>
+                    <h3>Unlocks :</h3>
+                </div>
+                <div class="box" id="">
+                    <h2></h2>
+                    <h3>Unlocks :</h3>
+                </div>
+                <div class="box" id="">
+                    <h2></h2>
+                    <h3>Unlocks :</h3>
+                </div>
+                <div class="box" id="">
+                    <h2></h2>
+                    <h3>Unlocks :</h3>
+                </div>
+            </div>
         </div>
-    </body>
+        <div class="barrels">
+
+        </div>
+        <div class="muzzles">
+
+        </div>
+        <div class="optics">
+
+        </div>
+        <div class="optics">
+            <h1 class="typeHeader">Optics</h1>
+            <div class="opticDIV">
+                <div class="box">
+                    <h2 id="Slimline">Slimline Pro</h2>
+                    <h3>Unlocked by leveling up the <a href="Guns.html#LACHMANN-SUB">LACHMANN-SUB</a> to level 11</h3>
+                </div>
+                <div class="box">
+                    <h2>SZ Mini</h2>
+    
+                </div>
+                <div class="box">
+                    <h2>Cronen Mini Red Dot</h2>
+                    <h3>Unlocked by leveling up the <a href="Guns.html#FSS-HURRICANE">FSS HURRICANE</a> to level 3</h3>
+                </div>
+                <div class="box">
+                    <h2>Cronen Mini Pro</h2>
+                    <h3>Unlocked by leveling up the <a href="Guns.html#EXPEDITE-12">EXPEDITE 12</a> to level 12</h3>
+                </div>
+                <div class="box">
+                    <h2>SZ Sigma-IV Optic</h2>
+    
+                </div>
+                <div class="box">
+                    <h2>SZ Minitac-40</h2>
+    
+                </div>
+                <div class="box">
+                    <h2>XRK On-Point Optic</h2>
+                    <h3>Unlocked be leveling up the <a href="Guns.html#BRYSON-890">BRYSON 890</a> to level 5</h3>
+                </div>
+                <div class="box">
+                    <h2>DF105 Reflex Sight</h2>
+                    <h3>Unlocked be leveling up the <a href="Guns.html#KASTOV-74U">KASTOV-74U</a> to level 10</h3>
+                </div>
+                <div class="box">
+                    <h2>Monocle CT90</h2>
+                    <h3>Unlocked by leveling up the <a href="Guns.html#MINIBAK">MINIBAK</a> to level 12</h3>
+                </div>
+                <div class="box">
+                    <h2>Corvus Sol-76</h2>
+                    <h3>Unlocked by leveling up the <a href="Guns.html#VEL-46">VEL 46</a> to level 5</h3>
+                </div>
+                <div class="box">
+                    <h2>SZ Recharge-DX</h2>
+                    <h3>Unlocked by leveling up the <a href="Guns.html#FENNEC">FENNEC</a> to level 4</h3>
+                </div>
+                <div class="box">
+                    <h2 id="SZSRO">SZ SRO-7</h2>
+                    <h3>Unlocked by leveling up the <a href="Guns.html#M16">M16</a> to level 11</h3>
+                </div>
+                <div class="box">
+                    <h2>Corio RE-X Pro</h2>
+    
+                </div>
+                <div class="box">
+                    <h2>Corio Enforcer Optic</h2>
+                    <h3>Unlocked by leveling up the <a href="Guns.html#VAZNEV-9K">VAZNEV-9K</a> to level 15</h3>
+                </div>
+                <div class="box">
+                    <h2 id="Lonewolf">SZ Lonewolf Optic</h2>
+                    <h3>Unlocked by leveling up the <a href="Guns.html#M4">M4</a> to level 2</h3>
+                </div>
+                <div class="box">
+                    <h2>Kazan-Holo</h2>
+                    <h3>Unlocked by leveling up the <a href="Guns.html#KASTOV-545">KASTOV 545</a> to level 7</h3>
+                </div>
+                <div class="box">
+                    <h2>Corvus Downrange-00</h2>
+                    <h3>Unlocked by leveling up the <a href="Guns.html#MX9">MX9</a> to level 8</h3>
+                </div>
+                <div class="box">
+                    <h2>SZ Holotherm</h2>
+                    <h3>Unlocked by leveling up the <a href="Guns.html#PDWS-528">PDSW 528</a> to level 12</h3>
+                </div>
+                <div class="box">
+                    <h2>XTEN Angel-40</h2>
+                    <h3>Unlocked by leveling up the <a href="Guns.html#TAQ-M">TAQ-M</a> to level 11</h3>
+                </div>
+                <div class="box">
+                    <h2>VLK 4.0 Optic</h2>
+                    <h3>Unlocked by leveling up the <a href="Guns.html#KASTOV-762">KASTOV 762</a> to level 3</h3>
+                </div>
+                <div class="box">
+                    <h2>Schlager 3.4X</h2>
+                    <h3>Unlocked by leveling up the <a href="Guns.html#RAPP-H">RAPP H</a> to level 12</h3>
+                </div>
+                <div class="box">
+                    <h2>Forge Tac Delta 4</h2>
+                    <h3>Unlocked by leveling up the <a href="Guns.html#556-ICARUS">556 ICARUS</a> to level 9</h3>
+                </div>
+                <div class="box">
+                    <h2>Cronen Zero-P Optic</h2>
+                    <h3>Unlocked by leveling up the <a href="Guns.html#TAQ-56">TAQ-56</a> to level 4</h3>
+                </div>
+                <div class="box">
+                    <h2>SZ Bullseye Optic</h2>
+    
+                </div>
+                <div class="box">
+                    <h2>SZ Aggressor-IR Optic</h2>
+    
+                </div>
+                <div class="box">
+                    <h2>Schlager Night View</h2>
+                    <h3>Unlocked by leveling up the <a href="Guns.html#STB-556">STB 556</a> to level 6</h3>
+                </div>
+                <div class="box">
+                    <h2>VX350 Thermal Optic</h2>
+                    <h3>Unlocked by leveling up the <a href="Guns.html#RPK">RPK</a> to level 7</h3>
+                </div>
+                <div class="box">
+                    <h2>Teplo-OP3 Scope</h2>
+    
+                </div>
+                <div class="box">
+                    <h2>DR582 Hybrid Sight</h2>
+                    <h3>Unlocked by leveling up the <a href="Guns.html#SAKIN-MG38">SAKIN MG38</a> to level 5</h3>
+                </div>
+                <div class="box">
+                    <h2>Hybrid Firepoint</h2>
+    
+                </div>
+                <div class="box">
+                    <h2>SZ Vortex-90</h2>
+                    <h3>Unlocked by leveling up the <a href="Guns.html#VEL-46">VEL 46</a> to level 28</h3>
+                </div>
+                <div class="box">
+                    <h2>BPZ40 Hybrid</h2>
+                    <h3>Unlocked by leveling up the <a href="Guns.html#TAQ-V">TAQ-V</a> to level 8</h3>
+                </div>
+                <div class="box">
+                    <h2>Angel-40 4.8X</h2>
+                    <h3>Unlocked by leveling up the <a href="Guns.html#RAAL-MG">RAAL MG</a> to level 6</h3>
+                </div>
+                <div class="box">
+                    <h2>Thermo-Optic X9</h2>
+                    <h3>Unlocked by leveling up the <a href="Guns.html#LACHMANN-556">LACHMANN-556</a> to level 14</h3>
+                </div>
+                <div class="box">
+                    <h2>Teplo Clear Shot</h2>
+                    <h3>Unlocked by leveling up the <a href="Guns.html#HCR-56">HCR 56</a> to level 9</h3>
+                </div>
+                <div class="box">
+                    <h2>Corio CQC Scope</h2>
+                    <h3>Unlocked by leveling up the <a href="Guns.html#BRYSON-800">BRYSON 800</a> to level 5</h3>
+                </div>
+                <div class="box">
+                    <h2>Daunt C80</h2>
+                    <h3>Unlocked by leveling up the <a href="Guns.html#LOCKWOOD-300">LOCKWOOD 300</a> to level 6</h3>
+                </div>
+                <div class="box">
+                    <h2>FTAC Charlie7</h2>
+    
+                </div>
+                <div class="box">
+                    <h2 id="HMW-20">HMW-20 Optic</h2>
+                    <h3>Unlocked by leveling up the <a href="Guns.html#LACHMANN-762">LACHMAN-762</a> to level 2</h3>
+                </div>
+                <div class="box">
+                    <h2>Luca Bandera Scope</h2>
+    
+                </div>
+                <div class="box">
+                    <h2>Drexsom Prime-90</h2>
+                    <h3>Unlocked by leveling up the <a href="Guns.html#FTAC-RECON">FTAC RECON</a> to level 12</h3>
+                </div>
+                <div class="box">
+                    <h2>Ares Clear Shot</h2>
+    
+                </div>
+                <div class="box">
+                    <h2>Luca Canis 4x Optic</h2>
+                    <h3>Unlocked by leveling up the <a href="Guns.html#HCR-56">HCR 56</a> to level 18</h3>
+                </div>
+                <div class="box">
+                    <h2>DXS Coriolis V4</h2>
+                    <h3>Unlocked by leveling up the <a href="Guns.html#TAQ-M">TAQ-M</a> to level 18</h3>
+                </div>
+                <div class="box">
+                    <h2>Lachmann Impact 9</h2>
+                    <h3>Unlocked by leveling up the <a href="Guns.html#LM-S">LM-S</a> to level 5</h3>
+                </div>
+                <div class="box">
+                    <h2>SP-X 80 6.6x</h2>
+    
+                </div>
+                <div class="box">
+                    <h2>FTAC Locus SP</h2>
+    
+                </div>
+                <div class="box">
+                    <h2>SZ Heatsource 800</h2>
+                    <h3>Unlocked by leveling up the <a href="Guns.html#TAQ-M">TAQ-M</a> to level 25</h3>
+                </div>
+                <div class="box">
+                    <h2>Cronen Irons</h2>
+    
+                </div>
+                <div class="box">
+                    <h2>MCPR-300 9.5x</h2>
+    
+                </div>
+                <div class="box">
+                    <h2>Victus 13x</h2>
+    
+                </div>
+                <div class="box">
+                    <h2>Signal 50 8x</h2>
+    
+                </div>
+                <div class="box">
+                    <h2>Corio 13x VRS</h2>
+    
+                </div>
+                <div class="box">
+                    <h2>Raptor FVM40</h2>
+    
+                </div>
+                <div class="box">
+                    <h2>DS Farsight 11</h2>
+                    <h3>Unlocked by leveling up the <a href="#M13B">M13B</a> to level 12</h3>
+                </div>
+                <div class="box">
+                    <h2>AIM OP-V4</h2>
+                    <h3>Unlocked by leveling up the <a href="#BASP">BAS-P</a> to level 5</h3>
+                </div>
+                <div class="box">
+                    <h2>SZ OSCAR-9</h2>
+                    <h3>Unlocked by leveling up the <a href="#BASP">BAS-P</a> to level 15</h3>
+                </div>
+                <div class="box">
+                    <h2>SZ BATTLE OPTIC</h2>
+                    <h3>Unlocked by leveling up the <a href="#BASP">BAS-P</a> to level 19</h3>
+                </div>
+        </div>
+    </div>
+</body>
 </html>
